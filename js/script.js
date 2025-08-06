@@ -113,6 +113,9 @@ signinForm.addEventListener("submit", function (event) {
   var errorFlag = false;
   const signinEmail = document.getElementById("signin-email").value.trim();
   const signinPass = document.getElementById("signin-pass").value.trim();
+  if (loginArr.length === 0) {
+    errorFlag = true;
+  }
 
   // Validate if user exists
   for (let i = 0; i < loginArr.length; i++) {
