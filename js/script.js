@@ -119,6 +119,7 @@ signinForm.addEventListener("submit", function (event) {
     if (loginArr[i].Email == signinEmail) {
       if (loginArr[i].password == signinPass) {
         window.sessionStorage.setItem("username", loginArr[i].UserName);
+        window.sessionStorage.setItem("signinname", loginArr[i].UserName);
         errorFlag = false;
         break;
       } else {
@@ -131,9 +132,7 @@ signinForm.addEventListener("submit", function (event) {
   if (errorFlag == true) {
     alert("Email or Password is incorrect");
   } else {
-    setTimeout(() => {
-      window.open(getBasePath() + "home.html", "_self");
-    }, 50);
+    window.open(getBasePath() + "home.html", "_self");
   }
 });
 
