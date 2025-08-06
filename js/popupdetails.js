@@ -251,7 +251,10 @@ logInBtnNew.addEventListener("click", function () {
     window.sessionStorage.setItem("username", "");
     window.sessionStorage.setItem("cart", JSON.stringify([]));
   }
-  open(getBasePath() + "index.html", "_self");
+  console.log("hostname:", window.location.hostname);
+  console.log("pathname:", window.location.pathname);
+  console.log("base path:", getBasePath());
+  // open(getBasePath() + "index.html", "_self");
 });
 
 // window.sessionStorage.getItem("username");
