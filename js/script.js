@@ -6,6 +6,8 @@ if (!window.localStorage.getItem("registered")) {
   arr = JSON.parse(window.localStorage.getItem("registered"));
 }
 
+window.sessionStorage.setItem("home", "hero");
+
 function getBasePath() {
   const isLocalhost =
     window.location.hostname === "127.0.0.1" ||
