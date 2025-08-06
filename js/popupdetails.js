@@ -237,12 +237,18 @@ checkOutButton.addEventListener("click", function () {
 });
 // checkout
 // login-logout
+
+function getBasePath() {
+  const path = window.location.pathname;
+  const repoName = "E-commerce-project";
+  return path.includes(repoName) ? `/${repoName}/` : "/";
+}
 logInBtnNew.addEventListener("click", function () {
   if (window.sessionStorage.getItem("username")) {
     window.sessionStorage.setItem("username", "");
     window.sessionStorage.setItem("cart", JSON.stringify([]));
   }
-  open("../index.html", "_self");
+  open(getBasePath() + "index.html", "_self");
 });
 
 // window.sessionStorage.getItem("username");
