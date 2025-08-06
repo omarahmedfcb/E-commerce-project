@@ -239,9 +239,12 @@ checkOutButton.addEventListener("click", function () {
 // login-logout
 
 function getBasePath() {
-  const path = window.location.pathname;
+  const isLocalhost =
+    window.location.hostname === "127.0.0.1" ||
+    window.location.hostname === "localhost";
   const repoName = "E-commerce-project";
-  return path.includes(repoName) ? `/${repoName}/` : "/";
+
+  return isLocalhost ? "/" : `/${repoName}/`;
 }
 logInBtnNew.addEventListener("click", function () {
   if (window.sessionStorage.getItem("username")) {
