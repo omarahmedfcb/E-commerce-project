@@ -5,6 +5,15 @@ if (!window.localStorage.getItem("registered")) {
 } else {
   arr = JSON.parse(window.localStorage.getItem("registered"));
 }
+
+function getBasePath() {
+  const isLocalhost =
+    window.location.hostname === "127.0.0.1" ||
+    window.location.hostname === "localhost";
+  const repoName = "E-commerce-project";
+
+  return isLocalhost ? "/" : `/${repoName}/`;
+}
 // Get form elements
 const container = document.getElementById("container");
 const registerBtn = document.getElementById("register"); // Button to toggle to Sign Up
@@ -120,7 +129,7 @@ signinForm.addEventListener("submit", function (event) {
   if (errorFlag == true) {
     alert("Email or Password is incorrect");
   } else {
-    window.open("home.html", "_self");
+    window.open(getBasePath() + "home.html", "_self");
   }
 });
 
