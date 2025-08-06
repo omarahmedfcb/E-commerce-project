@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-01.jpg",
+    "description": "Esprit Ruffle Shirt",
+    "price": 16.64,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "women"
+  },
+  {
+    "id": 2,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-02.jpg",
+    "description": "Herschel supply",
+    "price": 35.31,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "women"
+  },
+  {
+    "id": 3,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-03.jpg",
+    "description": "Only Check Trouser",
+    "price": 25.5,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "men"
+  },
+  {
+    "id": 4,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-04.jpg",
+    "description": "Classic Trench Coat",
+    "price": 75.0,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "women"
+  },
+  {
+    "id": 5,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-05.jpg",
+    "description": "Front Pocket Jumper",
+    "price": 34.75,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "women"
+  },
+  {
+    "id": 6,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-06.jpg",
+    "description": "Vintage Inspired Classic",
+    "price": 93.2,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "watches"
+  },
+  {
+    "id": 7,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-07.jpg",
+    "description": "Shirt in Stretch Cotton",
+    "price": 52.66,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "women"
+  },
+  {
+    "id": 8,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-08.jpg",
+    "description": "Pieces Metallic Printed",
+    "price": 18.96,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "women"
+  },
+  {
+    "id": 9,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-09.jpg",
+    "description": "Converse All Star Hi Plimsolls",
+    "price": 75.0,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "shoes"
+  },
+  {
+    "id": 10,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-10.jpg",
+    "description": "Femme T-Shirt In Stripe",
+    "price": 25.85,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "women"
+  },
+  {
+    "id": 11,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-11.jpg",
+    "description": "Herschel supply (men)",
+    "price": 63.16,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "men"
+  },
+  {
+    "id": 12,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-12.jpg",
+    "description": "Herschel supply (belt)",
+    "price": 63.15,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "men"
+  },
+  {
+    "id": 13,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-13.jpg",
+    "description": "T-Shirt with Sleeve",
+    "price": 18.49,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "women"
+  },
+  {
+    "id": 14,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-14.jpg",
+    "description": "Pretty Little Thing",
+    "price": 54.79,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "women"
+  },
+  {
+    "id": 15,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-15.jpg",
+    "description": "Mini Silver Mesh Watch",
+    "price": 86.85,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "watches"
+  },
+  {
+    "id": 16,
+    "image": "https://preview.colorlib.com/theme/cozastore/images/product-16.jpg",
+    "description": "Square Neck Back",
+    "price": 29.64,
+    "icon": "https://preview.colorlib.com/theme/cozastore/images/icons/icon-heart-01.png",
+    "category": "women"
+  }
+]
