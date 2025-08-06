@@ -131,7 +131,9 @@ signinForm.addEventListener("submit", function (event) {
   if (errorFlag == true) {
     alert("Email or Password is incorrect");
   } else {
-    window.open(getBasePath() + "home.html", "_self");
+    setTimeout(() => {
+      window.open(getBasePath() + "home.html", "_self");
+    }, 50);
   }
 });
 
