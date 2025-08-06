@@ -14,10 +14,19 @@ window.addEventListener("scroll", () => {
   }
 });
 
+function getBasePath() {
+  const isLocalhost =
+    window.location.hostname === "127.0.0.1" ||
+    window.location.hostname === "localhost";
+  const repoName = "E-commerce-project";
+
+  return isLocalhost ? "/" : `/${repoName}/`;
+}
+
 // Display Products Section
 function showProducts() {
   let req = new XMLHttpRequest();
-  req.open("GET", "api-products.json");
+  req.open("GET", getBasePath() + "api-products.json");
   req.send();
   req.onreadystatechange = () => {
     if (req.readyState === 4 && req.status === 200) {
@@ -238,7 +247,7 @@ let resultSearch = [];
 let resultSearchOrg = [];
 
 let reqSearch = new XMLHttpRequest();
-reqSearch.open("GET", "api-products.json");
+reqSearch.open("GET", getBasePath() + "api-products.json");
 reqSearch.send();
 
 reqSearch.onreadystatechange = () => {

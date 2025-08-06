@@ -6,8 +6,6 @@ if (!window.localStorage.getItem("registered")) {
   arr = JSON.parse(window.localStorage.getItem("registered"));
 }
 
-window.sessionStorage.setItem("home", "hero");
-
 function getBasePath() {
   const isLocalhost =
     window.location.hostname === "127.0.0.1" ||
@@ -114,7 +112,8 @@ signinForm.addEventListener("submit", function (event) {
   const signinEmail = document.getElementById("signin-email").value.trim();
   const signinPass = document.getElementById("signin-pass").value.trim();
   if (loginArr.length === 0) {
-    errorFlag = true;
+    alert("No registered users. Please sign up first.");
+    return;
   }
 
   // Validate if user exists
@@ -122,7 +121,6 @@ signinForm.addEventListener("submit", function (event) {
     if (loginArr[i].Email == signinEmail) {
       if (loginArr[i].password == signinPass) {
         window.sessionStorage.setItem("username", loginArr[i].UserName);
-        window.sessionStorage.setItem("signinname", loginArr[i].UserName);
         errorFlag = false;
         break;
       } else {

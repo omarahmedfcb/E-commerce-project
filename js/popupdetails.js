@@ -2,7 +2,7 @@ var res = 0;
 let logInBtnNew = document.querySelector(".logIn");
 
 var apiData = new XMLHttpRequest();
-apiData.open("GET", "../api-products.json");
+apiData.open("GET", getBasePath() + "api-products.json");
 apiData.send();
 apiData.onreadystatechange = function () {
   if (apiData.readyState === 4 && apiData.status == 200) {

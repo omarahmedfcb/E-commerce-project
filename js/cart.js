@@ -280,11 +280,20 @@ checkOutButton.addEventListener("click", function () {
 // dark mode
 
 // dark mode
+
+function getBasePath() {
+  const isLocalhost =
+    window.location.hostname === "127.0.0.1" ||
+    window.location.hostname === "localhost";
+  const repoName = "E-commerce-project";
+
+  return isLocalhost ? "/" : `/${repoName}/`;
+}
 // login-logout
 logInBtnNew.addEventListener("click", function () {
   if (window.sessionStorage.getItem("username")) {
     window.sessionStorage.setItem("username", "");
     window.sessionStorage.setItem("cart", JSON.stringify([]));
   }
-  open("../index.html", "_self");
+  open(getBasePath() + "index.html", "_self");
 });

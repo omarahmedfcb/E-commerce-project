@@ -56,7 +56,7 @@ let resultSearchShop = [];
 let resultSearchShopOrg = [];
 
 let reqSearchShop = new XMLHttpRequest();
-reqSearchShop.open("GET", "api-products.json");
+reqSearchShop.open("GET", getBasePath() + "api-products.json");
 reqSearchShop.send();
 
 reqSearchShop.onreadystatechange = () => {
@@ -109,10 +109,19 @@ function showSearchShopProducts(x) {
                 `;
   }
 }
+
+function getBasePath() {
+  const isLocalhost =
+    window.location.hostname === "127.0.0.1" ||
+    window.location.hostname === "localhost";
+  const repoName = "E-commerce-project";
+
+  return isLocalhost ? "/" : `/${repoName}/`;
+}
 logInBtnShopNew.addEventListener("click", function () {
   if (window.sessionStorage.getItem("username")) {
     window.sessionStorage.setItem("username", "");
     window.sessionStorage.setItem("cart", JSON.stringify([]));
   }
-  open("../index.html", "_self");
+  open(getBasePath() + "index.html", "_self");
 });
