@@ -286,5 +286,5 @@ logInBtnNew.addEventListener("click", function () {
     window.sessionStorage.setItem("username", "");
     window.sessionStorage.setItem("cart", JSON.stringify([]));
   }
-  open("../sign.html", "_self");
+  open("../index.html", "_self");
 });

@@ -132,7 +132,7 @@ addButton.addEventListener("click", function (e) {
     detailsSection.querySelector(".num").innerText = 1;
   } else {
     alert("you should log in first");
-    open("../sign.html", "_self");
+    open("../index.html", "_self");
   }
 });
 
@@ -242,7 +242,7 @@ logInBtnNew.addEventListener("click", function () {
     window.sessionStorage.setItem("username", "");
     window.sessionStorage.setItem("cart", JSON.stringify([]));
   }
-  open("../sign.html", "_self");
+  open("../index.html", "_self");
 });
 
 // window.sessionStorage.getItem("username");
