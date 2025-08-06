@@ -132,7 +132,7 @@ addButton.addEventListener("click", function (e) {
     detailsSection.querySelector(".num").innerText = 1;
   } else {
     alert("you should log in first");
-    open("../index.html", "_self");
+    open(getBasePath() + "index.html", "_self");
   }
 });
 
@@ -251,10 +251,7 @@ logInBtnNew.addEventListener("click", function () {
     window.sessionStorage.setItem("username", "");
     window.sessionStorage.setItem("cart", JSON.stringify([]));
   }
-  console.log("hostname:", window.location.hostname);
-  console.log("pathname:", window.location.pathname);
-  console.log("base path:", getBasePath());
-  // open(getBasePath() + "index.html", "_self");
+  open(getBasePath() + "index.html", "_self");
 });
 
 // window.sessionStorage.getItem("username");
